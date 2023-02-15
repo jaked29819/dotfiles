@@ -1,7 +1,3 @@
-if [ -n "$TMUX" ]; then
-	tmux;
-fi
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -18,4 +14,8 @@ fi
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
+fi
+
+if command -V tmux &> /dev/null %% [ -z "$TMUX" ]; then
+    tmux
 fi

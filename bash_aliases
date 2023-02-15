@@ -1,7 +1,7 @@
 alias ssh="ssh -X"
 alias sbrc="source ~/.bashrc; echo \"consider it sourced!\""
 alias vim="nvim"
-alias vimrc="vim ~/.bash_aliases; sbrc"
+alias vimrc="nvim ~/.bash_aliases; sbrc"
 
 function gotopi() {
 	if [ -z "$1" ]; then
