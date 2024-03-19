@@ -109,6 +109,10 @@ if [ -d ~/bin ]; then
 	export PATH=$PATH:~/bin
 fi
 
+if [ -d ~/pico/pico-sdk ]; then
+	export PICO_SDK_PATH=~/pico/pico-sdk
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
